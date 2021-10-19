@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="ace">
+    <script type="text/javascript" th:inline="javascript">
+        const key = [[${key}]];
+        const text = [[${text}]];
+        const mode = [[${mode}]];
+        const saveUrl = [[${saveUrl}]];
+    </script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/ace/1.4.9/ace.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/ace/1.4.9/ext-language_tools.js"></script>
+    <script src="../../static/js/common/ace.js" th:src="@{/js/common/ace.js}" type="text/javascript"></script>
+</div>
+</html>>

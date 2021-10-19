@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/header :: common_header(~{::title},~{::link},~{})">
+    <meta charset="UTF-8">
+    <title>Task Config</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/common/ace.css}" href="../../static/css/common/ace.css">
+</head>
+<body>
+<pre id="editor"></pre>
+<div th:replace="../templates/common/ace :: ace"></div>
+<div th:replace="../templates/common/foot :: foot"></div>
+</body>
+</html>

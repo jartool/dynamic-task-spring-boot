@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="common_header(title,links,styles)">
+  <meta charset="UTF-8">
+  <title th:replace="${title}"></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="stylesheet" type="text/css" th:href="@{/css/message/message.css}" href="../../static/css/message/message.css">
+  <th:block th:replace="${links}" />
+  <th:block th:replace="${styles}" />
+</head>
+<body>
+</body>
+</html>
