@@ -10,8 +10,36 @@
 
     <packaging>jar</packaging>
     <name>dynamic-task-spring-boot</name>
+    <url>https://github.com/jartool/dynamic-task-spring-boot</url>
     <description>Dynamic execution of scheduled tasks</description>
     <inceptionYear>2021</inceptionYear>
+
+    <licenses>
+        <license>
+            <name>Mulan Permissive Software License，Version 2</name>
+            <url>https://license.coscl.org.cn/MulanPSL2</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <issueManagement>
+        <system>github</system>
+        <url>https://github.com/jartool/dynamic-task-spring-boot/issues</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:https://github.com/jartool/dynamic-task-spring-boot.git</connection>
+        <developerConnection>scm:git:https://github.com/jartool/dynamic-task-spring-boot.git</developerConnection>
+        <url>https://github.com/jartool/dynamic-task-spring-boot</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>jartool</name>
+            <email>lidevboy@hotmail.com</email>
+            <url>https://github.com/jartool</url>
+        </developer>
+    </developers>
 
     <properties>
         <spring-boot-starter-web.version>2.5.5</spring-boot-starter-web.version>
