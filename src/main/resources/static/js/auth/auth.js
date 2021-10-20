@@ -1,4 +1,4 @@
-if (enableAuth) {
+if (authEnable) {
     const key = sessionStorage.getItem(authKey)
 
     if (key == null) {

@@ -45,8 +45,9 @@ public class Constants {
         public static final String TEXT = "text";
         public static final String MODE = "mode";
         public static final String SAVE_URL = "saveUrl";
-        public static final String ENABLE_AUTH = "enableAuth";
+        public static final String AUTH_ENABLE = "authEnable";
         public static final String AUTH_URL = "authUrl";
+        public static final String AUTH_KEY = "authKey";
         public static final String SECRET = "secret";
     }
 

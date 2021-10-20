@@ -36,7 +36,7 @@ public class DSTaskController {
     @Value("${jartool.task.save-url:/task/save}")
     private String taskSaveUrl;
     @Value("${jartool.task.auth.enable:true}")
-    private boolean enableAuth;
+    private boolean authEnable;
     @Value("${jartool.task.auth.key:auth}")
     private String authKey;
     @Value("${jartool.task.auth.url:/task/auth}")
@@ -55,8 +55,9 @@ public class DSTaskController {
         model.addAttribute(Constants.Rep.TEXT, dsTaskService.readTaskConf());
         model.addAttribute(Constants.Rep.MODE, "ini");
         model.addAttribute(Constants.Rep.SAVE_URL, taskSaveUrl);
+        model.addAttribute(Constants.Rep.AUTH_KEY, authKey);
         model.addAttribute(Constants.Rep.AUTH_URL, authUrl);
-        model.addAttribute(Constants.Rep.ENABLE_AUTH, enableAuth);
+        model.addAttribute(Constants.Rep.AUTH_ENABLE, authEnable);
         return Constants.View.VIEW_TASK;
     }
 
@@ -65,6 +66,7 @@ public class DSTaskController {
      * @param data data
      */
     @PostMapping("${jartool.task.save-url:/task/save}")
+    @ResponseBody
     public JSONObject saveTaskConf(@RequestBody DataEntity data) {
         if (data == null) throw new IllegalArgumentException(Constants.Rep.ERROR);
         JSONObject json = new JSONObject();
