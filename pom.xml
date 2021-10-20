@@ -97,12 +97,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>3.1.1</version>
-                <configuration>
-                    <javadocExecutable>E:/work/dev/jdk1.8.0_151/bin/javadoc.exe</javadocExecutable>
-                    <additionalJOptions>
-                        <additionalJOption>-Xdoclint:none</additionalJOption>
-                    </additionalJOptions>
-                </configuration>
                 <executions>
                     <execution>
                         <phase>package</phase>
