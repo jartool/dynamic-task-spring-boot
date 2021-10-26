@@ -43,7 +43,7 @@ public class DemoApplication {
 jartool:
   task:
     view: /task/conf  #动态定时任务配置页面访问地址,默认: /task/conf
-    conf-path: /usr/local/task/task.setting #setting配置文件路径,默认用户目录下/task/setting
+    conf-path: /usr/local/task/task.setting #setting配置文件路径,默认用户目录下:$User/task/setting
     pool:
       core-pool-size: 5  #核心线程数,默认:5
       max-pool-size: 10  #最大线程数,默认:10
