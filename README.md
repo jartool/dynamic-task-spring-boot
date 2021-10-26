@@ -68,3 +68,6 @@ reference：定时任务Service方法全路径，支持传参。
 		示例：io.github.jartool.task.DynamicTaskService@updateById,'195254666521234797
 isValid：定时任务是否有效，true有效，false失效
 ```
+```
+Tips: 定时任务配置保存 windows：ctrl+s Mac：command+s
+```
